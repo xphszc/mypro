@@ -1,6 +1,6 @@
 # !/bin/bash
 
-echo 'start flask ----'
+echo 'try start flask ----'
 
 # run myflask in back
 # log in log.txt

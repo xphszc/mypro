@@ -5,6 +5,8 @@ from flask_bootstrap import Bootstrap
 # 引入render_template
 from flask import render_template
 
+import time
+
 # 实例化app
 app = Flask(__name__)
 
@@ -16,7 +18,8 @@ bootstrap = Bootstrap(app)
 # 根路由处理函数
 def hello():
 	#return "Hello World!"
-	return render_template('base.html')
+	datetime = time.asctime(time.localtime(time.time()))
+	return render_template('base.html',time = datetime)
 
 # 若为程序入口则执行app
 if __name__ == '__main__':
