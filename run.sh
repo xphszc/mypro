@@ -3,7 +3,7 @@
 echo 'try start flask ----'
 
 # delete log.txt
-rm log.txt
+# rm log.txt
 
 # run myflask in back
 # log in log.txt
